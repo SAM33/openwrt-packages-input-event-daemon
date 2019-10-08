@@ -35,6 +35,7 @@ define Package/input-event-daemon/install
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/input-event-daemon $(1)/usr/bin
 	$(INSTALL_DIR) $(1)/etc
 	$(INSTALL_BIN) ./files/sample.conf $(1)/etc/input-event-daemon.conf
+	$(INSTALL_BIN) ./files/sample_touch.conf $(1)/etc/input-event-daemon-touch.conf
 endef
 
 
